@@ -27,14 +27,26 @@
             {% endfor %}
           </ul>
         </li>
-        {% if item_count > 0 %}
-          <li class="nav-item">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'shop02:allProductCategory' %}">Offers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'shop02:allProductCategory' %}">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'shop02:allProductCategory' %}">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          {% if item_count > 0 %}
              <a class="nav-link" href="{% url 'cart:cart_detail' %}"><i class="fa fa-shopping-cart"></i>({{item_count}})</a>
-          </li>
-        {% endif %}
+          {% endif %}
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">24x7 customer care</a>
+        </li>
       </ul>
       <form class="d-flex" action="{% url 'search_app:searchResult' %}" method="get">
-        <input class="form-control me-2" type="search" placeholder="Search" name="q" aria-label="Search">
+        <input class="form-control me-2" type="search" placeholder="Search for products, brands" name="q" aria-label="Search" style="width: 400px;">
         <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
       </form>
     </div>
