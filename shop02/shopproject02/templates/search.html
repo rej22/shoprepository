@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block metadescription %}
+    We have plenty of options for you
+{% endblock %}
+
+{% block title %}
+    {% if category %}
+        search
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+       <div>
+          <p class="text-center my_search_text">You have searched for <b>"{{query}}"</b></p>
+       </div>
+      <div class="row mx-auto">
+         {% for product in products %}
+           <div class="col-9 col-sm-12 col-md-3 xol-lg-4">
+              <div class="card shadow" style="width: 18rem;">
+                  <a href="{{product.get_url}}"><img class="product_detail_pic" src="{{product.productImage.url}}" alt="{{product.productName}}"></a>
+                 <div class="card-body">
+                   <h5>{{product.productName}}</h5>
+                   <h5>{{product.productPrice}}</h5>
+                 </div>
+              </div>
+           </div>
+             {% empty %}
+                 <div>
+                     <p class="text-center my_search_text_01"> 0 Results found.</p>
+                 </div>
+         {% endfor %}
+       </div>
+  </div>
+{% endblock %}
