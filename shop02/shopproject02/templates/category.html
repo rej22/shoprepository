@@ -27,7 +27,7 @@
     {% else %}
         <div class="container">
             <div class="row">
-                <img class="front_banner shadow shadow" src="{% static 'img/raj_banner.png' %}" alt="bannner">
+                <img class="front_banner shadow" src="{% static 'img/raj_banner.png' %}" alt="bannner">
             </div>
             <div>
                 <div>
@@ -37,16 +37,18 @@
             </div>
         </div>
     {% endif %}
-    <div class="container">
+    <div class="container-fluid">
         <div class="row mx-auto">
             {% for product in products %}
-              <div class="my_bottom_margin col-9 col-sm-12 col-md-3 xol-lg-4">
-                <div class="card shadow" style="width: 18rem;">
+              <div class="col-9 col-sm-12 col-md-3 xol-lg-4">
+                <div class="card shadow card_category" style="width: 20rem;">
                     <a href="{{product.get_url}}"><img src="{{product.productImage.url}}" class="card-img-top" alt="{{product.productName}}"></a>
-                    <div class="card-body">
+                    <a class="category_card_link" href="{{product.get_url}}">
+                      <div class="card-body card_body_category">
                         <h5 class="card-title">{{product.productName}}</h5>
                         <p class="card-text">{{product.productPrice}}</p>
-                    </div>
+                      </div>
+                    </a>
                 </div>
               </div>
             {% endfor %}

@@ -18,9 +18,6 @@
     margin-bottom: 7px;
     background-image: linear-gradient(135deg, #B91372 10%, #6B0F1A 100%);
 }
-.dropdown-item{
-    color: #FFFFFF;
-}
 .nav-link {
     letter-spacing: .2em;
     font-size: 14px;
@@ -32,16 +29,54 @@
     font-size: 14px;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-left: 15px;
 }
-.dropdown-item{
-    letter-spacing: .2em;
-    font-size: 14px;
-    text-transform: uppercase;
+.nav-item:hover a {
+     color: black;
+}
+.nav-item:hover {
+     background-image: linear-gradient(135deg, #b3ffab 10%, #12fff7 100%);
+     border-radius: 5px;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.dropdown-menu {
+    background-image: linear-gradient(135deg, #b3ffab 10%, #12fff7 100%);
 }
 .logo_img_banner01{
     height: 100px;
     width: 400px;
 }
+
+/************
+   Category
+************/
+
+.category_banner{
+    height: 500px;
+    width: 100%;
+    margin-bottom: 7px;
+    border-radius: 30px;
+}
+.card_category{
+    padding: 7px;
+    margin-bottom: 7px;
+}
+.card_body_category {
+    background-image: linear-gradient(135deg, #B91372 10%, #6B0F1A 100%);
+    color: white;
+}
+.category_card_link {
+    text-decoration: none;
+}
+a.category_card_link.card_body_category:hover {
+  color: #B0C4DE !important;
+}
+
+/************
+   footer
+************/
+
+
 .my_footer{
     background-image: linear-gradient(135deg, #F53803 10%, #F5D020 100%);
     height: 300px;
@@ -49,7 +84,6 @@
     padding-top: 30px;
     margin-top: 100px;
 }
-
 .product_detail_pic{
     width: 300px;
     height: 300px;
@@ -63,21 +97,8 @@
 .page_sec{
     margin-top: 7px;
 }
-.category_banner{
-    height: 500px;
-    width: 100%;
-    margin-bottom: 7px;
-    border-radius: 30px;
-}
-.card{
-    margin-bottom: 7px;
-    margin-top: 7px;
-}
 .pro_row{
     padding-left: 15px;
-}
-.card-body{
-    background-color: #F0E68C;
 }
 .cat_republic_banner{
     height: 500px;
@@ -100,9 +121,7 @@
     padding-top: 50px;
     padding-bottom: 220px;
 }
-.my_bottom_margin{
-    margin-bottom: 10px;
-}
+
 .card-img-top{
     height: 286.4px;
     width: 286.4px;
