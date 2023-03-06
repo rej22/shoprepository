@@ -163,10 +163,11 @@ my_title_head{
     font-size: 14px;
 }
 .my_custom_thead{
-    font-weight: normal;
+    font-weight: bold;
     font-transform: uppercase;
     letter-spacing: .2em;
-    background-color: #F4A460;
+    background-image: linear-gradient(135deg, #B91372 10%, #6B0F1A 100%);
+    color: white;
 }
 .custom_a{
     text-decoration: none;
@@ -177,14 +178,24 @@ my_title_head{
 }
 .my_custom_button{
     margin-top: 5px;
+    color: black;
+    background-image: linear-gradient(135deg, #B91372 10%, #6B0F1A 100%);
 }
+a.my_custom_button:hover {
+    background-color: #ff0000;
+    background-image: linear-gradient(135deg, #b3ffab 10%, #12fff7 100%);
+    color: black;
+}
+
 .custom_image{
     width: 200px;
     height: 275px;
 }
 .my_td{
-    background-color: #F0E68C;
+    background-image: linear-gradient(135deg, #b3ffab 10%, #12fff7 100%);
+    font-weight: bold;
 }
 .empty_cart_para{
     marign-top: 100px;
+    margin-bottom: 100px;
 }
