@@ -56,9 +56,9 @@
         </div>
         <div class="page_sec">
             {% if products.paginator.num_pages > 1 %}
-               <div class="text-center">
+               <div class="text-center page_no">
                    {% for pg in products.paginator.page_range %}
-                       <a href="?page={{pg}}" class="btn btn-light btn-sm {% if products.number == pg %} active {% endif %}">{{pg}}</a>
+                       <a href="?page={{pg}}" class="btn btn-light btn-lg page_btn{% if products.number == pg %} active {% endif %}">{{pg}}</a>
                    {% endfor %}
                </div>
             {% endif %}
