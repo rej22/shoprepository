@@ -41,15 +41,16 @@
         <div class="row mx-auto">
             {% for product in products %}
               <div class="col-9 col-sm-12 col-md-3 xol-lg-4">
-                <div class="card shadow card_category" style="width: 20rem;">
-                    <a href="{{product.get_url}}"><img src="{{product.productImage.url}}" class="card-img-top" alt="{{product.productName}}"></a>
-                    <a class="category_card_link" href="{{product.get_url}}">
-                      <div class="card-body card_body_category">
-                        <h5 class="card-title">{{product.productName}}</h5>
-                        <p class="card-text">{{product.productPrice}}</p>
-                      </div>
-                    </a>
-                </div>
+                  <a class="category_card_link" href="{{product.get_url}}">
+                    <div class="card shadow card_category" style="width: 20rem;">
+                      <a  href="{{product.get_url}}"><img src="{{product.productImage.url}}" class="card-img-top" alt="{{product.productName}}">
+                        <div class="card-body card_body_category">
+                          <h5 class="card-title">{{product.productName}}</h5>
+                          <p class="card-text">{{product.productPrice}}</p>
+                        </div>
+                      </a>
+                    </div>
+                  </a>
               </div>
             {% endfor %}
         </div>
