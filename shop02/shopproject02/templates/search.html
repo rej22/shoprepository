@@ -18,10 +18,10 @@
        </div>
       <div class="row mx-auto">
          {% for product in products %}
-           <div class="col-9 col-sm-12 col-md-3 xol-lg-4">
-              <div class="card shadow" style="width: 18rem;">
+           <div class="col-9 col-sm-12 col-md-3 xol-lg-4 card_search_col">
+              <div class="card shadow card_search" style="width: 18rem;">
                   <a href="{{product.get_url}}"><img class="product_detail_pic" src="{{product.productImage.url}}" alt="{{product.productName}}"></a>
-                 <div class="card-body">
+                 <div class="card-body card_body_search">
                    <h5>{{product.productName}}</h5>
                    <h5>{{product.productPrice}}</h5>
                  </div>
