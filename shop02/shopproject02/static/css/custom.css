@@ -115,6 +115,18 @@ a.page_btn:hover {
     width: 100%;
     margin-top: 10px;
 }
+a:hover .fab {
+  color: yellow;
+}
+.foot_pro_a {
+    text-decoration: none;
+}
+a.foot_pro_a:hover {
+  color: yellow !important;
+}
+.fab {
+    margin: 15px;
+}
 
 /************
    search
